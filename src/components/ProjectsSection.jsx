@@ -1,7 +1,9 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
+  id,
   title,
   location,
   totalAmount,
@@ -60,9 +62,12 @@ const ProjectCard = ({
         </div>
       </div>
 
-      <button className="w-full mt-4 py-3 bg-gray-100 text-gray-800 rounded-md hover:bg-gray-200">
+      <Link
+        to={`/project/${id}`}
+        className="w-full mt-4 py-3 bg-gray-100 text-gray-800 rounded-md hover:bg-gray-200 block text-center"
+      >
         상세보기
-      </button>
+      </Link>
     </div>
   </div>
 );
