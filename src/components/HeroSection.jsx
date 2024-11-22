@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import heroItems from "../assets/images/projects/65eec572af91e.jpg";
 
 const HeroSection = () => (
@@ -30,9 +31,11 @@ const HeroSection = () => (
             </div>
             {/* 버튼 */}
             <div className="w-full lg:w-[400px]">
-              <button className="w-full bg-white text-green-600 py-3 px-6 rounded-md hover:bg-green-50 transition-colors text-base font-medium">
-                크라우드펀딩 시작하기
-              </button>
+              <Link to="/crowdfunding">
+                <button className="w-full bg-white text-green-600 py-3 px-6 rounded-md hover:bg-green-50 transition-colors text-base font-medium">
+                  크라우드펀딩 시작하기
+                </button>
+              </Link>
             </div>
           </div>
         </div>
